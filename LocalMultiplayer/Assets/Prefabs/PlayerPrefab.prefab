@@ -314,7 +314,6 @@ Transform:
   m_Children:
   - {fileID: 2643902743880799606}
   - {fileID: 1832698310230988419}
-  - {fileID: 7297732418212996138}
   - {fileID: 5030680704907939874}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -828,6 +827,7 @@ GameObject:
   - component: {fileID: 8162098282853781705}
   - component: {fileID: 1171227665423941133}
   - component: {fileID: 7594490666871803387}
+  - component: {fileID: 3270301011704669140}
   m_Layer: 0
   m_Name: PlayerCanvas
   m_TagString: Untagged
@@ -851,7 +851,7 @@ RectTransform:
   - {fileID: 5014906909497988069}
   - {fileID: 4832529713316370479}
   - {fileID: 6130152300573995857}
-  m_Father: {fileID: 3645565272592639969}
+  m_Father: {fileID: 2643902743880799606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -867,8 +867,8 @@ Canvas:
   m_GameObject: {fileID: 4945542246498390950}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 8120538902545015349}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -921,6 +921,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3270301011704669140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4945542246498390950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afc1a4160323234092403f744384589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6067316367325987878
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +998,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.635, z: 0.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7297732418212996138}
   m_Father: {fileID: 3645565272592639969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &8120538902545015349
