@@ -19,7 +19,10 @@ public class PlayerStats : MonoBehaviour
     [Header("Color")]
     public Material[] playerColors;
 
-    void Start()
+    [Header("Script Grabs")]
+    public PlayerClass playerClass;
+
+    public void UpdateHealth()
     {
         currentHealth = startingHealth;
     }
@@ -41,7 +44,11 @@ public class PlayerStats : MonoBehaviour
 
     public void Die()
     {
-        //Add Death/Respanwing logic here
-        Debug.Log("Player Died");
+        playerClass.OpenMenu();
+
+        playerClass.ResetPlayerClass();
+
+        //Reset Pos
+        //Make Invicible while choosing?
     }
 }

@@ -1,16 +1,19 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.EventSystems;
 
 public class PlayerClass : MonoBehaviour
 {
     public enum Class { None, Tank, Sprinter, Balanced } //Health & Speed
     public enum Weapon { None, SMG, Shotgun, Sniper } //Weapon Type
-    public enum Color { None, Red, Yellow, Green, Blue, Purple, Pink, Black } //Cosmetic Color
+    public enum PlayerColor { None, Red, Yellow, Green, Blue, Purple, Pink, Black } //Cosmetic Color
 
     public Class currentClass = Class.None;
     public Weapon currentWeapon = Weapon.None;
-    public Color currentColor = Color.None;
+    public PlayerColor currentColor = PlayerColor.None;
 
     private PlayerStats playerStats;
+    public GameObject selectMenu;
 
     private void Start()
     {
@@ -22,6 +25,13 @@ public class PlayerClass : MonoBehaviour
         ClassSelection();
         WeaponSelection();
         ColorSelection();
+    }
+
+    public void ResetPlayerClass()
+    {
+        currentClass = Class.None;
+        currentWeapon = Weapon.None;
+        currentColor = PlayerColor.None;
     }
 
     public void ClassSelection()
@@ -45,10 +55,21 @@ public class PlayerClass : MonoBehaviour
         }
     }
 
+    public void ApplyClass(Class selectedClass)
+    {
+        currentClass = selectedClass;
+    }
+
     public void WeaponSelection()
     {
         switch (currentWeapon)
         {
+            case Weapon.None:
+                playerStats.damagePerHit = 0;
+                playerStats.maxBulletsInMag = 0;
+                playerStats.reloadTime = 0f;
+                playerStats.shotCooldown = 0f;
+                break;
             case Weapon.SMG:
                 playerStats.damagePerHit = 10;
                 playerStats.maxBulletsInMag = 30;
@@ -72,38 +93,87 @@ public class PlayerClass : MonoBehaviour
         }
     }
 
+    public void ApplyWeapon(Weapon selectedWeapon)
+    {
+        currentWeapon = selectedWeapon;
+    }
+
     public void ColorSelection()
     {
         switch (currentColor)
         {
-            case Color.Red:
+            case PlayerColor.None:
+                playerStats.PlayerColor(0);
+                break;
+            case PlayerColor.Red:
                 playerStats.PlayerColor(1);
                 break;
 
-            case Color.Yellow:
+            case PlayerColor.Yellow:
                 playerStats.PlayerColor(2);
                 break;
 
-            case Color.Green:
+            case PlayerColor.Green:
                 playerStats.PlayerColor(3);
                 break;
 
-            case Color.Blue:
+            case PlayerColor.Blue:
                 playerStats.PlayerColor(4);
                 break;
 
-            case Color.Purple:
+            case PlayerColor.Purple:
                 playerStats.PlayerColor(5);
                 break;
 
-            case Color.Pink:
+            case PlayerColor.Pink:
                 playerStats.PlayerColor(6);
                 break;
 
-            case Color.Black:
+            case PlayerColor.Black:
                 playerStats.PlayerColor(7);
                 break;
         }
     }
 
+    public void ApplyColor(PlayerColor selectedColor)
+    {
+        currentColor = selectedColor;
+    }
+
+    // -----------------------
+    // BUTTON WRAPPERS
+    // -----------------------
+
+    // Classes
+    public void ApplyClassTank() => ApplyClass(Class.Tank);
+    public void ApplyClassSprinter() => ApplyClass(Class.Sprinter);
+    public void ApplyClassBalanced() => ApplyClass(Class.Balanced);
+
+    // Weapons
+    public void ApplyWeaponSMG() => ApplyWeapon(Weapon.SMG);
+    public void ApplyWeaponShotgun() => ApplyWeapon(Weapon.Shotgun);
+    public void ApplyWeaponSniper() => ApplyWeapon(Weapon.Sniper);
+
+    // Colors
+    public void ApplyColorRed() => ApplyColor(PlayerColor.Red);
+    public void ApplyColorYellow() => ApplyColor(PlayerColor.Yellow);
+    public void ApplyColorGreen() => ApplyColor(PlayerColor.Green);
+    public void ApplyColorBlue() => ApplyColor(PlayerColor.Blue);
+    public void ApplyColorPurple() => ApplyColor(PlayerColor.Purple);
+    public void ApplyColorPink() => ApplyColor(PlayerColor.Pink);
+    public void ApplyColorBlack() => ApplyColor(PlayerColor.Black);
+
+    public void CloseMenu()
+    {
+        selectMenu.SetActive(false);
+        this.GetComponent<EventSystem>().enabled = false;
+
+        playerStats.UpdateHealth();
+    }
+
+    public void OpenMenu()
+    {
+        selectMenu.SetActive(true);
+        this.GetComponent<EventSystem>().enabled = true;
+    }
 }
