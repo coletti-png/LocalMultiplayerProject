@@ -16,9 +16,17 @@ public class PlayerStats : MonoBehaviour
     public int maxBulletsInMag;
     public float shotCooldown;
 
+    [Header("Color")]
+    public Material[] playerColors;
+
     void Start()
     {
         currentHealth = startingHealth;
+    }
+
+    public void PlayerColor(int colorNum)
+    {
+        this.GetComponent<Renderer>().material = playerColors[colorNum];
     }
 
     public void TakeDamage(int damageTaken)

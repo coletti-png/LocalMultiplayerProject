@@ -3,10 +3,12 @@ using UnityEngine;
 public class PlayerClass : MonoBehaviour
 {
     public enum Class { None, Tank, Sprinter, Balanced } //Health & Speed
-    public enum Weapon { None, SMG, Shotgun, Sniper }
+    public enum Weapon { None, SMG, Shotgun, Sniper } //Weapon Type
+    public enum Color { None, Red, Yellow, Green, Blue, Purple, Pink, Black } //Cosmetic Color
 
     public Class currentClass = Class.None;
     public Weapon currentWeapon = Weapon.None;
+    public Color currentColor = Color.None;
 
     private PlayerStats playerStats;
 
@@ -19,6 +21,7 @@ public class PlayerClass : MonoBehaviour
     {
         ClassSelection();
         WeaponSelection();
+        ColorSelection();
     }
 
     public void ClassSelection()
@@ -65,6 +68,40 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 1;
                 playerStats.reloadTime = 5f;
                 playerStats.shotCooldown = 0;
+                break;
+        }
+    }
+
+    public void ColorSelection()
+    {
+        switch (currentColor)
+        {
+            case Color.Red:
+                playerStats.PlayerColor(1);
+                break;
+
+            case Color.Yellow:
+                playerStats.PlayerColor(2);
+                break;
+
+            case Color.Green:
+                playerStats.PlayerColor(3);
+                break;
+
+            case Color.Blue:
+                playerStats.PlayerColor(4);
+                break;
+
+            case Color.Purple:
+                playerStats.PlayerColor(5);
+                break;
+
+            case Color.Pink:
+                playerStats.PlayerColor(6);
+                break;
+
+            case Color.Black:
+                playerStats.PlayerColor(7);
                 break;
         }
     }
