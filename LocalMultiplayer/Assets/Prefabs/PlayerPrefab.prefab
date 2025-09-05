@@ -405,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   startingHealth: 0
-  moveSpeed: 0
+  moveSpeed: 1
   damagePerHit: 0
   reloadTime: 0
   bulletsInMag: 0
