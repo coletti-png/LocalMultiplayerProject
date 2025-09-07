@@ -34,11 +34,14 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(int damageTaken)
     {
-        currentHealth -= damageTaken;
-
-        if (currentHealth <= 0)
+        if (!playerClass.isInvincible)
         {
-            Die();
+            currentHealth -= damageTaken;
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 
@@ -49,6 +52,6 @@ public class PlayerStats : MonoBehaviour
         playerClass.ResetPlayerClass();
 
         //Reset Pos
-        //Make Invicible while choosing?
+        
     }
 }

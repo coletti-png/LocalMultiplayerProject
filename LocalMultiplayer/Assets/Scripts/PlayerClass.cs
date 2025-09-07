@@ -14,6 +14,11 @@ public class PlayerClass : MonoBehaviour
 
     private PlayerStats playerStats;
     public GameObject selectMenu;
+    public GameObject Smg;
+    public GameObject Sniper;
+    public GameObject Shotgun;
+
+    public bool isInvincible = false;
 
     private void Start()
     {
@@ -69,12 +74,17 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 0;
                 playerStats.reloadTime = 0f;
                 playerStats.shotCooldown = 0f;
+                Smg.SetActive(false);
+                Sniper.SetActive(false);
+                Shotgun.SetActive(false);
+
                 break;
             case Weapon.SMG:
                 playerStats.damagePerHit = 10;
                 playerStats.maxBulletsInMag = 30;
                 playerStats.reloadTime = 8f;
                 playerStats.shotCooldown = 0f;
+                Smg.SetActive(true);
                 break;
 
             case Weapon.Shotgun:
@@ -82,6 +92,7 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 5;
                 playerStats.reloadTime = 3f;
                 playerStats.shotCooldown = 1.25f;
+                Shotgun.SetActive(true);
                 break;
 
             case Weapon.Sniper:
@@ -89,6 +100,7 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 1;
                 playerStats.reloadTime = 5f;
                 playerStats.shotCooldown = 0;
+                Sniper.SetActive(true);
                 break;
         }
     }
@@ -166,14 +178,20 @@ public class PlayerClass : MonoBehaviour
     public void CloseMenu()
     {
         selectMenu.SetActive(false);
+        StartCoroutine(Wait2Seconds());
         this.GetComponent<EventSystem>().enabled = false;
-
         playerStats.UpdateHealth();
     }
 
     public void OpenMenu()
     {
         selectMenu.SetActive(true);
+        isInvincible = true;
         this.GetComponent<EventSystem>().enabled = true;
+    }
+    IEnumerator Wait2Seconds()
+    {
+        yield return new WaitForSeconds(2);
+        isInvincible = false;
     }
 }
