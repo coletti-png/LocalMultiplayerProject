@@ -11,14 +11,16 @@ public class PlayerClass : MonoBehaviour
     public Class currentClass = Class.None;
     public Weapon currentWeapon = Weapon.None;
     public PlayerColor currentColor = PlayerColor.None;
-
-    private PlayerStats playerStats;
-    public GameObject selectMenu;
+    
+    [Header("Weapon Models")]
     public GameObject Smg;
     public GameObject Sniper;
     public GameObject Shotgun;
 
+    [Header("Respawning")]
+    public GameObject selectMenu;
     public bool isInvincible = false;
+    private PlayerStats playerStats;
 
     private void Start()
     {

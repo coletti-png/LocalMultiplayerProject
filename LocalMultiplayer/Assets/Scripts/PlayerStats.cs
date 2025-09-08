@@ -20,8 +20,12 @@ public class PlayerStats : MonoBehaviour
     public Material[] playerColors;
 
     [Header("Script Grabs")]
-    public PlayerClass playerClass;
+    private PlayerClass playerClass;
 
+    public void Start()
+    {
+        playerClass = this.GetComponent<PlayerClass>();
+    }
     public void UpdateHealth()
     {
         currentHealth = startingHealth;
