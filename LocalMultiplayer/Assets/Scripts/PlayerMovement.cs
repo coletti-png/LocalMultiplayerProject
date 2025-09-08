@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TMP_Text ammoText;
     [SerializeField] private TMP_Text classText;
     [SerializeField] private TMP_Text weaponText;
+    [SerializeField] private TMP_Text healthText;
 
     private CharacterController controller;
     private PlayerStats playerStats;
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private float shotCooldownTimer = 0f;
     private bool isReloading = false;
     private float reloadTimer = 0f;
+    private bool fireHeld = false;
 
     private void Awake()
     {
@@ -48,35 +50,47 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Update cooldown
-        if (shotCooldownTimer > 0)
+        // Update health UI
+        healthText.text = playerStats.currentHealth.ToString();
+
+        // Cooldowns
+        if (shotCooldownTimer > 0f)
             shotCooldownTimer -= Time.deltaTime;
 
-        // Handle reload
         if (isReloading)
         {
+            fireHeld = false;
             reloadTimer -= Time.deltaTime;
             if (reloadTimer <= 0f)
             {
                 isReloading = false;
-                playerStats.bulletsInMag = playerStats.maxBulletsInMag; // refill mag
+                playerStats.bulletsInMag = playerStats.maxBulletsInMag;
             }
         }
 
-        // Ground check
+        // Auto-fire for SMG
+        if (fireHeld && playerStats.autoFire && !isReloading && shotCooldownTimer <= 0f && playerStats.bulletsInMag > 0)
+        {
+            Shoot();
+        }
+
+        if (Gamepad.current != null && Gamepad.current.rightTrigger.wasReleasedThisFrame)
+        {
+            fireHeld = false;
+        }
+
+        // Movement & gravity
         isGrounded = controller.isGrounded;
-        if (isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0f)
             velocity.y = -2f;
 
-        // Movement
         Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
         controller.Move(move * playerStats.moveSpeed * Time.deltaTime);
 
-        // Apply gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        // Look
+        // Look rotation
         float mouseX = lookInput.x * mouseSensitivity * Time.deltaTime;
         float mouseY = lookInput.y * mouseSensitivity * Time.deltaTime;
 
@@ -91,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         UpdateStatUI();
     }
 
-    // Input System Callbacks
+    #region Input System Callbacks
     public void OnMove(InputValue input) => moveInput = input.Get<Vector2>();
     public void OnLook(InputValue input) => lookInput = input.Get<Vector2>();
 
@@ -105,7 +119,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnShoot(InputValue input)
     {
-        if (input.isPressed && !isReloading && shotCooldownTimer <= 0f && playerStats.bulletsInMag > 0)
+        // R2 trigger or button input returns a float (0 to 1)
+        float triggerValue = input.Get<float>();
+        fireHeld = triggerValue > 0.1f; // consider pressed if partially pulled
+
+        // Semi-auto fire: fire ONCE per press
+        if (fireHeld && !playerStats.autoFire && !isReloading && shotCooldownTimer <= 0f && playerStats.bulletsInMag > 0)
         {
             Shoot();
         }
@@ -118,33 +137,65 @@ public class PlayerMovement : MonoBehaviour
             StartReload();
         }
     }
+    #endregion
 
+    #region Shooting Methods
     private void Shoot()
     {
         if (bulletPrefab == null || firePoint == null) return;
 
-        // Instantiate bullet
+        switch (playerClass.currentWeapon)
+        {
+            case PlayerClass.Weapon.SMG:
+                ShootSingleBullet();
+                break;
+
+            case PlayerClass.Weapon.Shotgun:
+                ShootShotgun();
+                break;
+
+            case PlayerClass.Weapon.Sniper:
+                ShootSingleBullet();
+                break;
+        }
+
+        shotCooldownTimer = playerStats.shotCooldown;
+        playerStats.bulletsInMag--;
+
+        if (playerStats.bulletsInMag <= 0)
+            StartReload();
+    }
+
+    private void ShootSingleBullet()
+    {
         GameObject bulletObj = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
         if (bulletObj.TryGetComponent<Rigidbody>(out var rb))
-        {
             rb.linearVelocity = firePoint.forward * 30f;
-        }
 
-        // Assign damage to bullet
         if (bulletObj.TryGetComponent<Bullet>(out var bullet))
-        {
             bullet.damage = playerStats.damagePerHit;
-        }
+    }
 
-        // Ammo + cooldown
-        playerStats.bulletsInMag--;
-        shotCooldownTimer = playerStats.shotCooldown;
+    private void ShootShotgun()
+    {
+        int pelletCount = 7;
+        float spreadAngle = 7f;
 
-        // Auto-reload if mag empty
-        if (playerStats.bulletsInMag <= 0)
+        for (int i = 0; i < pelletCount; i++)
         {
-            StartReload();
+            Quaternion spreadRotation = firePoint.rotation *
+                Quaternion.Euler(Random.Range(-spreadAngle, spreadAngle),
+                                 Random.Range(-spreadAngle, spreadAngle),
+                                 0);
+
+            GameObject pellet = Instantiate(bulletPrefab, firePoint.position, spreadRotation);
+
+            if (pellet.TryGetComponent<Rigidbody>(out var rb))
+                rb.linearVelocity = spreadRotation * Vector3.forward * 30f;
+
+            if (pellet.TryGetComponent<Bullet>(out var bullet))
+                bullet.damage = playerStats.damagePerHit / pelletCount;
         }
     }
 
@@ -156,26 +207,22 @@ public class PlayerMovement : MonoBehaviour
             reloadTimer = playerStats.reloadTime;
         }
     }
+    #endregion
 
-
+    #region UI Methods
     private void UpdateAmmoUI()
     {
         if (ammoText == null) return;
 
-        if (isReloading)
-        {
-            ammoText.text = $"Reloading...";
-        }
-        else
-        {
-            ammoText.text = $"{playerStats.bulletsInMag} / {playerStats.maxBulletsInMag}";
-        }
+        ammoText.text = isReloading
+            ? "Reloading..."
+            : $"{playerStats.bulletsInMag} / {playerStats.maxBulletsInMag}";
     }
 
     private void UpdateStatUI()
     {
-        classText.text = "" + playerClass.currentClass;
-        weaponText.text = "" + playerClass.currentWeapon;
+        classText.text = playerClass.currentClass.ToString();
+        weaponText.text = playerClass.currentWeapon.ToString();
     }
+    #endregion
 }
-

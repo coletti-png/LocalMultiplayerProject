@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public float bulletsInMag;
     public int maxBulletsInMag;
     public float shotCooldown;
+    public bool autoFire;
 
     [Header("Color")]
     public Material[] playerColors;

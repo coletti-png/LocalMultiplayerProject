@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerClass : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerClass : MonoBehaviour
     public GameObject Smg;
     public GameObject Sniper;
     public GameObject Shotgun;
+    public Image reticle;
+    public Sprite[] crossHairs;
 
     [Header("Respawning")]
     public GameObject selectMenu;
@@ -76,17 +79,22 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 0;
                 playerStats.reloadTime = 0f;
                 playerStats.shotCooldown = 0f;
+                playerStats.autoFire = false;
+
                 Smg.SetActive(false);
                 Sniper.SetActive(false);
                 Shotgun.SetActive(false);
-
+                reticle.sprite = crossHairs[0];
                 break;
             case Weapon.SMG:
                 playerStats.damagePerHit = 10;
-                playerStats.maxBulletsInMag = 30;
+                playerStats.maxBulletsInMag = 45;
                 playerStats.reloadTime = 8f;
-                playerStats.shotCooldown = 0f;
+                playerStats.shotCooldown = 0.1f;
+                playerStats.autoFire = true;
+
                 Smg.SetActive(true);
+                reticle.sprite = crossHairs[1];
                 break;
 
             case Weapon.Shotgun:
@@ -94,7 +102,10 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 5;
                 playerStats.reloadTime = 3f;
                 playerStats.shotCooldown = 1.25f;
+                playerStats.autoFire = false;
+
                 Shotgun.SetActive(true);
+                reticle.sprite = crossHairs[2];
                 break;
 
             case Weapon.Sniper:
@@ -102,7 +113,10 @@ public class PlayerClass : MonoBehaviour
                 playerStats.maxBulletsInMag = 1;
                 playerStats.reloadTime = 5f;
                 playerStats.shotCooldown = 0;
+                playerStats.autoFire = false;
+
                 Sniper.SetActive(true);
+                reticle.sprite = crossHairs[3];
                 break;
         }
     }

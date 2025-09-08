@@ -21,6 +21,9 @@ public class Bullet : MonoBehaviour
             Debug.Log(damage);
         }
 
-        Destroy(gameObject);
+        if (collision.gameObject.tag != "Bullet")
+        {
+            Destroy(gameObject);
+        }
     }
 }
