@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7c5b3da675ec7aa42bfc98383687476f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269586
+  packageName: 'Artistic: Comic'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Comic/Editor/Internal/Drawer.CheckUpdate.cs
+  uploadId: 783924

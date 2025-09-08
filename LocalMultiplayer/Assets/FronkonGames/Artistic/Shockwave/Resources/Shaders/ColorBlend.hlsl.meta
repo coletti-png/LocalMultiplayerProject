@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 559ee30826f16c74a938b517d72bf66c
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Resources/Shaders/ColorBlend.hlsl
+  uploadId: 783938

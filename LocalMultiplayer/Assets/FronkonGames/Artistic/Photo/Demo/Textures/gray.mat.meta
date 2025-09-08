@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71c95c32fb8f3454cbaa3c72c2991ef0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Demo/Textures/gray.mat
+  uploadId: 783932

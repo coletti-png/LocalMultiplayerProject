@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef94ca0a9b50aec459e20939aa6bc629
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267617
+  packageName: 'Artistic: Tonemapper'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Tonemapper/Demo/Textures/green.mat
+  uploadId: 783944

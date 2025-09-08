@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f29a3011f54efd94ea2764d2a9a5b8ee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Demo/Textures/orange.mat
+  uploadId: 783936

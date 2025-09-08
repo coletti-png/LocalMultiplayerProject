@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1c72cb8a80db72c449c65e226510fef5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Demo/Settings/Shockwave Universal
+    Render Pipeline Asset_Renderer.asset
+  uploadId: 783938

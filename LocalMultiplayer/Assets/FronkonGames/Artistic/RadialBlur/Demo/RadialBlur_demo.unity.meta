@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6d15cfa1f0c445c4c96cb0d819b8f99b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271547
+  packageName: 'Artistic: Radial Blur'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/RadialBlur/Demo/RadialBlur_demo.unity
+  uploadId: 783934

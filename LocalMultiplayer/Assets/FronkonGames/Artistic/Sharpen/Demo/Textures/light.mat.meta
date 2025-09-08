@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1c8982ce85db55943846722546558db8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Demo/Textures/light.mat
+  uploadId: 783936

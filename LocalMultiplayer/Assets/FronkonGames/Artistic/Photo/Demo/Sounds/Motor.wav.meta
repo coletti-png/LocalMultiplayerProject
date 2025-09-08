@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 8ac37385196517242a5f542d7064ecb9
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 7
+  defaultSettings:
+    serializedVersion: 2
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+    preloadAudioData: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Demo/Sounds/Motor.wav
+  uploadId: 783932

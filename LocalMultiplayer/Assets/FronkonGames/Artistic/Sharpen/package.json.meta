@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 220fd0b97f272524ca598413ad0bc3bc
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/package.json
+  uploadId: 783936

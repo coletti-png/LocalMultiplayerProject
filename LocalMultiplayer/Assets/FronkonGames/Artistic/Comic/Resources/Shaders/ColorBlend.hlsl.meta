@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e9d8bb5168c1f50479edc4b304fb27d8
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269586
+  packageName: 'Artistic: Comic'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Comic/Resources/Shaders/ColorBlend.hlsl
+  uploadId: 783924

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 43d28672c848d954f875e15adf86a37d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Editor/Internal/Styles.cs
+  uploadId: 783938

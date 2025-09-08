@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a5911b7a2bf751944acfd36be6fcaf54
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Runtime/Internal/Constants.cs
+  uploadId: 783936

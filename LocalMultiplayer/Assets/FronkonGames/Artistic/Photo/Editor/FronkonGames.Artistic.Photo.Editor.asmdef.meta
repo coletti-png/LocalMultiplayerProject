@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4afb3c9c5e34707459127a374170f46b
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Editor/FronkonGames.Artistic.Photo.Editor.asmdef
+  uploadId: 783932

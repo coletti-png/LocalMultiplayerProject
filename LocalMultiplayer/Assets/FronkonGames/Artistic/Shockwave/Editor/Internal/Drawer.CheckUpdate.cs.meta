@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c158479de5203944d92b9f3a4150345b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Editor/Internal/Drawer.CheckUpdate.cs
+  uploadId: 783938

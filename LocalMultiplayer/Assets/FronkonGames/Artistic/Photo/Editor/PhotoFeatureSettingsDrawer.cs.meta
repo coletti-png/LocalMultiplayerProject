@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 28e485c354b28564d9c5a98ae73e4587
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Editor/PhotoFeatureSettingsDrawer.cs
+  uploadId: 783932

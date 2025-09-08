@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c4c834708755d6441adafd9af2996d55
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/Runtime/ColorBlends.cs
+  uploadId: 783940

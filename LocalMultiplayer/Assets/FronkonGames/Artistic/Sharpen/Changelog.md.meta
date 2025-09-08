@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 52177dadc3a960a4e931a4473b1a1829
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Changelog.md
+  uploadId: 783936

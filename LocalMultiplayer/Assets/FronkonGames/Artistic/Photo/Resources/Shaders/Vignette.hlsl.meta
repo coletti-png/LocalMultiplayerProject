@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aa3a41cff451a6249a87f71cde90400a
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/Vignette.hlsl
+  uploadId: 783932

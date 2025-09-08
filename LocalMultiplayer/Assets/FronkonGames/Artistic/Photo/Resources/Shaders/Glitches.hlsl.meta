@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 75eca94881afb6348abb2757b1746831
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/Glitches.hlsl
+  uploadId: 783932

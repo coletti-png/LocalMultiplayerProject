@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a5c8fe1a546ad31459b90fa4e64eb814
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Resources/Shaders/Artistic.hlsl
+  uploadId: 783938

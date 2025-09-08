@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 931e60268f9c02b4db424d5088d68fce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271547
+  packageName: 'Artistic: Radial Blur'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/RadialBlur/Demo/Scripts/Swing.cs
+  uploadId: 783934

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 63b5a361d052ef44ba895a9c943e831b
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/package.json
+  uploadId: 783940

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6a8b4c835682f4c4093e6e43196530ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271547
+  packageName: 'Artistic: Radial Blur'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/RadialBlur/Editor/Internal/Inspector.cs
+  uploadId: 783934

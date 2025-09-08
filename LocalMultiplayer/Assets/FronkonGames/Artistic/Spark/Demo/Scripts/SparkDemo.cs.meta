@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1afa2a3d322c8ba419c2658ade811203
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/Demo/Scripts/SparkDemo.cs
+  uploadId: 783940

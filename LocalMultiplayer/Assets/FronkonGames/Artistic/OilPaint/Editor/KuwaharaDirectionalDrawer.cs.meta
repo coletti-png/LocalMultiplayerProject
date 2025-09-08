@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 81398b7fc41dae84e912a5d810e1c929
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264134
+  packageName: 'Artistic: Oil Paint'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/OilPaint/Editor/KuwaharaDirectionalDrawer.cs
+  uploadId: 783928

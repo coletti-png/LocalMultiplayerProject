@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3cb1c68634c59d24d9288c7eb75cd7b4
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/Resources/Shaders/GaussianBlur.hlsl
+  uploadId: 783940

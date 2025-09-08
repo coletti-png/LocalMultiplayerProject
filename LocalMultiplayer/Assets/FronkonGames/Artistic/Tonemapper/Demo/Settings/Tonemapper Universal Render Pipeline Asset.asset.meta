@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 699a8d757b4789247a5864baf0799d21
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267617
+  packageName: 'Artistic: Tonemapper'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Tonemapper/Demo/Settings/Tonemapper Universal
+    Render Pipeline Asset.asset
+  uploadId: 783944

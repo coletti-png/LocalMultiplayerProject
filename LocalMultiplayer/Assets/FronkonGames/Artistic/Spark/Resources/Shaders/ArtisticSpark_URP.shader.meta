@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: aad0ff18c7dec2f4bb3a91c5ba316aac
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/Resources/Shaders/ArtisticSpark_URP.shader
+  uploadId: 783940

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: db3e36d278fc9fa47a223975fd5802a6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Resources/Shaders/ArtisticSharpen_URP.shader
+  uploadId: 783936

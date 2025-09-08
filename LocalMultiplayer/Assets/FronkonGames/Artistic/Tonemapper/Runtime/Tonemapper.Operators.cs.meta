@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 26dfb3488a729864c815192722e7266a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267617
+  packageName: 'Artistic: Tonemapper'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Tonemapper/Runtime/Tonemapper.Operators.cs
+  uploadId: 783944

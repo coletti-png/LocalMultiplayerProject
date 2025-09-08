@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 65dfe77963f7a3540852f9ae36d51e47
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264134
+  packageName: 'Artistic: Oil Paint'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/OilPaint/Runtime/KuwaharaDirectional.cs
+  uploadId: 783928

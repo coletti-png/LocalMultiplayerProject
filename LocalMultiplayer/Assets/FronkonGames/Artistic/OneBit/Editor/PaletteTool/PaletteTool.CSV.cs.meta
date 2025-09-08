@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7bf61520339623047867531ea3532145
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 216000
+  packageName: 'Artistic: One Bit'
+  packageVersion: 3.2.1
+  assetPath: Assets/FronkonGames/Artistic/OneBit/Editor/PaletteTool/PaletteTool.CSV.cs
+  uploadId: 783930

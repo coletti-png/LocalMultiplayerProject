@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8148cb3dae50668448adab9954ca6bef
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270269
+  packageName: 'Artistic: Neon'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Neon/Editor/FronkonGames.Artistic.Neon.Editor.asmdef
+  uploadId: 783926

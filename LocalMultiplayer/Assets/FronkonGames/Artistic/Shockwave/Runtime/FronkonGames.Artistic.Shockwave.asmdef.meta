@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c4295046247af7241a6a94568ee26468
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Runtime/FronkonGames.Artistic.Shockwave.asmdef
+  uploadId: 783938

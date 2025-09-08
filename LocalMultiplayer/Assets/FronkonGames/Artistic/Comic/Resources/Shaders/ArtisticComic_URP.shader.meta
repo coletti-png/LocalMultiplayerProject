@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b9f1a7a3f68d8e746b05ecdae3dd0db2
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269586
+  packageName: 'Artistic: Comic'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Comic/Resources/Shaders/ArtisticComic_URP.shader
+  uploadId: 783924

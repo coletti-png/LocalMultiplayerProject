@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ff40349194292ca45aef985e51bd23f5
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/ArtisticPhoto_URP.shader
+  uploadId: 783932

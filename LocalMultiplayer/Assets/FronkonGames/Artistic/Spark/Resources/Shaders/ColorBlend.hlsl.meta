@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 73bbb06f50b85144fa7de80dd3758f57
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270898
+  packageName: 'Artistic: Spark'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Spark/Resources/Shaders/ColorBlend.hlsl
+  uploadId: 783940

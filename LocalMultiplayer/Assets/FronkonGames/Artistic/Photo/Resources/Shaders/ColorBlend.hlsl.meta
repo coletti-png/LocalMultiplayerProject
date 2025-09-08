@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a2acf27a071f9294f9cfb9564d762d31
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/ColorBlend.hlsl
+  uploadId: 783932

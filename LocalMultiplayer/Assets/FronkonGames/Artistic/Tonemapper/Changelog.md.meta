@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2ae413ddbeb3d714eb79f2d8dccf6d5c
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267617
+  packageName: 'Artistic: Tonemapper'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Tonemapper/Changelog.md
+  uploadId: 783944

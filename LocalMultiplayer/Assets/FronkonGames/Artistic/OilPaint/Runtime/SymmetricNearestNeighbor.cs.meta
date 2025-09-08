@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 395747c1aad4eb443894cdb54711146c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264134
+  packageName: 'Artistic: Oil Paint'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/OilPaint/Runtime/SymmetricNearestNeighbor.cs
+  uploadId: 783928

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3dc237ce7ae37a544a3dde0f65a2ae9e
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/Artistic.hlsl
+  uploadId: 783932

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c19d54f7cc2e94c49b2622a4ef5c48ac
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Demo/Sharpen_demo.unity
+  uploadId: 783936

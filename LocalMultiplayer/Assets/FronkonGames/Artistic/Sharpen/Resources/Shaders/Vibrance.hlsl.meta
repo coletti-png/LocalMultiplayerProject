@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 66c5ebdecd97e8849a31a9d016dcad63
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Resources/Shaders/Vibrance.hlsl
+  uploadId: 783936

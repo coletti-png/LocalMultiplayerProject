@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cef4c4684a78cf04ebb24b9bbaf22744
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267617
+  packageName: 'Artistic: Tonemapper'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Tonemapper/Resources/Shaders/Artistic.hlsl
+  uploadId: 783944

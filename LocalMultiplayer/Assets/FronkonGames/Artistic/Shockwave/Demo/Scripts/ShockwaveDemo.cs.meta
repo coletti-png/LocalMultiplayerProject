@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9131bb4fb4dcae24682a1a5e3e3323bb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Demo/Scripts/ShockwaveDemo.cs
+  uploadId: 783938

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e05bf2b863a08d840b6555d405e7bcff
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330713
+  packageName: 'Artistic: Shockwave'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Shockwave/Resources/Shaders/ArtisticShockwave_URP.shader
+  uploadId: 783938

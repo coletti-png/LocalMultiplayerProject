@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cb823a07fdac19b4ca16282ce17c75ae
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 216000
+  packageName: 'Artistic: One Bit'
+  packageVersion: 3.2.1
+  assetPath: Assets/FronkonGames/Artistic/OneBit/Editor/PaletteTool/palettes.csv
+  uploadId: 783930

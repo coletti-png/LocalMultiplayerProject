@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e5cf45478ca563447912e40138aea999
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269586
+  packageName: 'Artistic: Comic'
+  packageVersion: 2.1.2
+  assetPath: Assets/FronkonGames/Artistic/Comic/Editor/Internal/SupportWindow.cs
+  uploadId: 783924

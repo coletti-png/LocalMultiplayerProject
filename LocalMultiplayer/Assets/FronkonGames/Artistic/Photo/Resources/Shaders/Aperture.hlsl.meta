@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 476f4eb5ac38fcd429a28f6dbdb17f30
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315961
+  packageName: 'Artistic: Photo'
+  packageVersion: 1.0.1
+  assetPath: Assets/FronkonGames/Artistic/Photo/Resources/Shaders/Aperture.hlsl
+  uploadId: 783932

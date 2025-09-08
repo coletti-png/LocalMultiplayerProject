@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a2349cb2b6249a54eaf18dd3c950e3e0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266728
+  packageName: 'Artistic: Sharpen'
+  packageVersion: 2.2.0
+  assetPath: Assets/FronkonGames/Artistic/Sharpen/Demo/Settings/Sharpen Universal
+    Render Pipeline Asset.asset
+  uploadId: 783936
